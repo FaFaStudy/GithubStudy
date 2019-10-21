@@ -10,6 +10,7 @@ RESTful Web 服务与传统的 MVC 开发一个关键区别是返回给客户端
 但是 RESTful Web 服务一般会将返回的数据以 JSON 的形式返回，这也就是现在所推崇的前后端分离开发。
 使用 Lombok 来优化 Java 代码，以及一些开发 RestFul Web 服务常用的注解
 
+@RestController是Spring 4 之后新加的注解，如果在Spring4之前开发 RESTful Web服务的话，你需要使用@Controller 并结合@ResponseBody注解，也就是说@Controller +@ResponseBody= @RestController。对于这两个注解，我在基础篇单独抽了一篇文章来介绍。
 @RestController vs @Controller
 单独使用 @Controller 不加 @ResponseBody的话一般使用在要返回一个视图的情况，这种情况属于比较传统的Spring MVC 的应用，对应于前后端不分离的情况。
 @RestController返回JSON或XML形式数据
